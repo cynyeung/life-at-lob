@@ -1,0 +1,77 @@
+@import 'shared/settings.scss';
+@import 'shared/typography.scss';
+@import 'shared/utilities.scss';
+@import 'components/dropdown.scss';
+
+
+main {
+	display: flex;
+	flex-direction: column;
+
+	@include viewport(medium) {
+		flex-direction: row-reverse;
+	}
+}
+
+.container-content {
+	flex-grow: 1;
+	flex-basis: 50%;
+}
+
+.container-copy {
+	text-align: center;
+	max-width: 330px;
+	
+	@include viewport(medium) {
+		text-align: left;
+		max-width: 450px;
+		margin-top: 141px;
+	}
+}
+
+.section-intro {
+	h1 {
+		@include typography(35, 35, 300);
+		color: $azure;
+		
+		@include viewport(medium) {
+			@include typography(42, 42, 300);
+		}
+	}
+
+	p {
+		color: $shadow-70;
+	}
+}
+
+.section-values {
+	max-width: 400px;
+	border-bottom: 1px solid $dove;
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	h2 {
+		@include typography(18, 27, 500);
+		color: $steel;
+	}
+}
+
+p {
+	@include typography(18, 25, 400);
+	color: $shadow;
+
+	@include viewport(medium) {
+		@include typography(18, 27, 400);
+	}
+}
+
+a {
+		transition: color 200ms ease;
+		color: #0099d7;
+
+	&:hover {
+		color: #1878e0;
+	}
+}

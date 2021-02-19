@@ -1,0 +1,28 @@
+/** =====================================
+		TYPOGRAPHY
+		================================== */
+
+
+@mixin font-face($font-name, $path, $weight) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url("https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+"+$path) format("opentype");
+    font-weight: $weight;
+  }
+}
+
+@include font-face(Larsseit, "Larsseit-Thin.otf", 100);
+@include font-face(Larsseit, "Larsseit-Light.otf", 300);
+@include font-face(Larsseit, "Larsseit-Regular.otf", 400);
+@include font-face(Larsseit, "Larsseit-Medium.otf", 500);
+@include font-face(Larsseit, "Larsseit+Bold.otf", 700);
+
+
+@mixin typography($font-size, $line-height, $font-weight) {
+  font-family: 'Larsseit', sans-serif;
+  font-size: $font-size * 1px;
+  line-height: $line-height * 1px;
+  font-weight: $font-weight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

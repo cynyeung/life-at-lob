@@ -1,0 +1,33 @@
+/** =====================================
+    VARIABLES
+    ================================== */
+
+
+// Primary Colors
+$cobalt: #1878E0;
+$cerulean: #0099D7;
+
+// Gray Colors
+$shadow:#27333C;
+$shadow-70: #27333CB3;
+$steel: #5F83A5; 
+$dove: #C5D6E6;
+$fog: #EBF0F6;
+
+// Custom Colors
+$shadow-70: #27333CB3;
+$azure: #3A5F83;
+
+
+// Media Queries
+$breakpoints: (
+  small : 320px,
+  medium: 768px,
+  large : 1024px
+);
+
+@mixin viewport($size) {
+  @media only screen and (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
