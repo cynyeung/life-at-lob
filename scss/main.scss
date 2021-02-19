@@ -7,9 +7,11 @@
 main {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	@include viewport(medium) {
 		flex-direction: row-reverse;
+		align-items: unset;
 	}
 }
 
@@ -21,6 +23,7 @@ main {
 .container-copy {
 	text-align: center;
 	max-width: 330px;
+	margin-top: 48px;
 	
 	@include viewport(medium) {
 		text-align: left;
@@ -45,8 +48,14 @@ main {
 }
 
 .section-values {
-	max-width: 400px;
 	border-bottom: 1px solid $dove;
+	max-width: 284px;
+	margin: 0 auto;
+
+	@include viewport(medium) {
+		max-width: 400px;
+		margin: unset;
+	}
 
 	&:last-child {
 		border-bottom: none;
@@ -70,6 +79,7 @@ p {
 a {
 		transition: color 200ms ease;
 		color: #0099d7;
+		text-decoration: none;
 
 	&:hover {
 		color: #1878e0;
