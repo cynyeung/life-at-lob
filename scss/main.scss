@@ -3,32 +3,43 @@
 @import 'shared/utilities.scss';
 @import 'components/dropdown.scss';
 
+body {
+	margin: 0;
+}
 
 main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	min-height: 1600px;
 
 	@include viewport(medium) {
 		flex-direction: row-reverse;
 		align-items: unset;
+		min-height: 1300px;
 	}
 }
 
-.container-content {
-	flex-grow: 1;
+section {
+	width: 100%;
 	flex-basis: 50%;
+	
+	@include viewport(medium) {
+		flex-grow: 1;
+		width: initial;
+	}
 }
 
 .container-copy {
 	text-align: center;
 	max-width: 330px;
-	margin-top: 48px;
+	margin: 48px auto 0;
 	
 	@include viewport(medium) {
 		text-align: left;
 		max-width: 450px;
 		margin-top: 141px;
+		margin-left: 90px;
 	}
 }
 
@@ -84,4 +95,36 @@ a {
 	&:hover {
 		color: #1878e0;
 	}
+}
+
+.section-image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	flex-grow: 1;
+	background: linear-gradient(180deg, $white 173px, $dove 173px);
+
+	@include viewport(medium) {
+		background: linear-gradient(180deg, $fog 491px, $dove 491px);
+	}
+}
+
+.section-background {
+	background-image: url('../assets/images/Cat.png');
+  background-repeat: no-repeat;
+  height: 240px;
+	width: 265px;
+  background-size: 100% 240px;
+
+	margin-top: 25px;
+	margin-bottom: 45px;
+
+  @include viewport(medium) {
+    height: 410px;
+		width: 453px;
+    background-size: 100% 410px;
+		margin-top: 220px;
+		margin-bottom: 52px;
+  }
 }
