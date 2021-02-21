@@ -43,10 +43,7 @@
     transform: scaleY(1);
   }
 }
-.dropdown-select {
-  filter: drop-shadow(0px 0px 0px #27333C00);
-}
-.dropdown-listbox-button {
+.dropdown-button {
   display: flex;
   align-items: center;
   color: #27333C;
@@ -60,8 +57,8 @@
   height: 56px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 768px) {
-  .dropdown-listbox-button {
+@media only screen and (min-width: 1254px) {
+  .dropdown-button {
     padding-left: 23px;
     width: 400px;
     height: 50px;
@@ -78,21 +75,21 @@
   align-items: center;
   position: relative;
 }
-.dropdown-listbox {
+.dropdown-options {
   position: absolute;
   top: 100%;
   left: 8px;
-  width: 100%;
-  perspective: 1000px;
-  z-index: -1;
-  padding: 0;
   margin: 0;
   width: 310px;
+  padding: 14px 0 16px;
+  border-radius: 2px;
+  background-color: #F7F9FA;
 }
-@media only screen and (min-width: 768px) {
-  .dropdown-listbox {
+@media only screen and (min-width: 1254px) {
+  .dropdown-options {
     width: 380px;
     left: 10px;
+    padding: 21px 0;
   }
 }
 .dropdown-option {
@@ -111,60 +108,44 @@
   text-align: left;
   transition: color 200ms ease;
   padding: 7px 25px;
+  border-radius: 2px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .dropdown-option {
     padding: 13px 30px;
-  }
-}
-.dropdown-option:first-of-type {
-  padding-top: 21px;
-}
-@media only screen and (min-width: 768px) {
-  .dropdown-option:first-of-type {
-    padding-top: 30px;
-  }
-}
-.dropdown-option:last-of-type {
-  border-radius: 2px;
-  padding-bottom: 23px;
-}
-@media only screen and (min-width: 768px) {
-  .dropdown-option:last-of-type {
-    padding-bottom: 34px;
   }
 }
 .dropdown-option:hover {
   color: #0099D7;
 }
-.dropdown-listbox--animated {
+.dropdown-options--animated {
   display: none;
 }
-.dropdown-listbox--animated .dropdown-option {
+.dropdown-options--animated .dropdown-option {
   display: block;
   opacity: 1;
 }
-.dropdown-listbox--animation {
+.dropdown-options--animation {
   animation: scaleDown 300ms ease-in-out forwards;
   transform-origin: top center;
 }
 
-.dropdown-listbox-button:hover {
+.dropdown-options--expanded {
   cursor: pointer;
 }
-.dropdown-listbox-button:hover .dropdown-option {
+.dropdown-options--expanded .dropdown-option {
   display: flex;
   align-items: center;
 }
-.dropdown-listbox-button:hover .dropdown-listbox--animated {
+.dropdown-options--expanded .dropdown-options--animated {
   display: block;
 }
-.dropdown-listbox-button:hover .icon--chevron {
+.dropdown-options--expanded .icon--chevron {
   transform: rotate(90deg);
   right: -2px;
 }
-@media only screen and (min-width: 768px) {
-  .dropdown-listbox-button:hover .icon--chevron {
+@media only screen and (min-width: 1254px) {
+  .dropdown-options--expanded .icon--chevron {
     right: -7px;
   }
 }
@@ -174,7 +155,7 @@
   height: 28px;
   margin: 0 14px 0 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon {
     width: 35px;
     height: 35px;
@@ -189,7 +170,7 @@
   position: absolute;
   right: -2px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon--chevron {
     right: -12px;
   }
@@ -201,7 +182,7 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-strength {
     height: 35px;
     background-size: 100% 35px;
@@ -214,7 +195,7 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-diversity {
     height: 35px;
     background-size: 100% 35px;
@@ -227,7 +208,7 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-hammer {
     height: 35px;
     background-size: 100% 35px;
@@ -240,7 +221,7 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-heart {
     height: 35px;
     background-size: 100% 35px;
@@ -253,7 +234,7 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-scientist {
     height: 35px;
     background-size: 100% 35px;
@@ -266,7 +247,7 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-blueprint {
     height: 35px;
     background-size: 100% 35px;
@@ -279,7 +260,7 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-investor {
     height: 35px;
     background-size: 100% 35px;
@@ -292,15 +273,16 @@
   height: 28px;
   background-size: 100% 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .icon-chevron {
     height: 35px;
     background-size: 100% 35px;
   }
 }
 
-body {
+html, body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -309,7 +291,7 @@ main {
   align-items: center;
   min-height: 1600px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   main {
     flex-direction: row-reverse;
     align-items: unset;
@@ -321,7 +303,7 @@ section {
   width: 100%;
   flex-basis: 50%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   section {
     flex-grow: 1;
     width: initial;
@@ -333,7 +315,7 @@ section {
   max-width: 330px;
   margin: 48px auto 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .container-copy {
     text-align: left;
     max-width: 450px;
@@ -351,7 +333,7 @@ section {
   -moz-osx-font-smoothing: grayscale;
   color: #3A5F83;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .section-intro h1 {
     font-family: "Larsseit", sans-serif;
     font-size: 42px;
@@ -370,7 +352,7 @@ section {
   max-width: 284px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .section-values {
     max-width: 400px;
     margin: unset;
@@ -398,7 +380,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   color: #27333C;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   p {
     font-family: "Larsseit", sans-serif;
     font-size: 18px;
@@ -425,7 +407,7 @@ a:hover {
   flex-grow: 1;
   background: linear-gradient(180deg, #FFFFFF 173px, #C5D6E6 173px);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .section-image {
     background: linear-gradient(180deg, #EBF0F6 491px, #C5D6E6 491px);
   }
@@ -440,7 +422,7 @@ a:hover {
   margin-top: 25px;
   margin-bottom: 45px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1254px) {
   .section-background {
     height: 410px;
     width: 453px;
