@@ -1,9 +1,9 @@
 /** =====================================
-    VARIABLES
-    ================================== */
+	VARIABLES
+	================================== */
 /** =====================================
-		TYPOGRAPHY
-		================================== */
+	TYPOGRAPHY
+	================================== */
 @font-face {
   font-family: "Larsseit";
   src: url("https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+Larsseit-Thin.otf") format("opentype");
@@ -30,8 +30,8 @@
   font-weight: 700;
 }
 /** =====================================
-    DROPDOWN
-    ================================== */
+	DROPDOWN
+	================================== */
 @keyframes scaleDown {
   0% {
     transform: scaleY(0);
@@ -310,95 +310,6 @@ section {
   }
 }
 
-.container-copy {
-  text-align: center;
-  max-width: 330px;
-  margin: 50px auto 0;
-}
-@media only screen and (min-width: 737px) {
-  .container-copy {
-    text-align: left;
-    max-width: 300px;
-  }
-}
-@media only screen and (min-width: 1254px) {
-  .container-copy {
-    max-width: 450px;
-    margin-top: 142px;
-    margin-left: 90px;
-  }
-}
-
-.section-intro h1 {
-  font-family: "Larsseit", sans-serif;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3A5F83;
-  margin-bottom: 24px;
-}
-@media only screen and (min-width: 1254px) {
-  .section-intro h1 {
-    font-family: "Larsseit", sans-serif;
-    font-size: 42px;
-    line-height: 42px;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-bottom: 40px;
-  }
-}
-.section-intro p {
-  color: #27333CB3;
-}
-
-.section-values {
-  border-bottom: 1px solid #C5D6E6;
-  max-width: 284px;
-  margin: 0 auto -6px;
-}
-@media only screen and (min-width: 737px) {
-  .section-values {
-    margin: 0 0 -6px;
-  }
-}
-@media only screen and (min-width: 1254px) {
-  .section-values {
-    max-width: 400px;
-    margin: 0 0 -26px;
-  }
-}
-.section-values:last-child {
-  border-bottom: none;
-}
-.section-values h2 {
-  font-family: "Larsseit", sans-serif;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #5F83A5;
-  margin-top: 38px;
-}
-@media only screen and (min-width: 1254px) {
-  .section-values h2 {
-    margin-top: 44px;
-  }
-}
-.section-values p {
-  margin-top: 10px;
-  margin-bottom: 32px;
-}
-@media only screen and (min-width: 1254px) {
-  .section-values p {
-    margin-top: -8px;
-    margin-bottom: 20px;
-  }
-}
-
 p {
   font-family: "Larsseit", sans-serif;
   font-size: 18px;
@@ -428,10 +339,100 @@ a:hover {
   color: #1878e0;
 }
 
+.container-copy {
+  text-align: center;
+  max-width: 330px;
+  margin: 50px auto 0;
+}
+@media only screen and (min-width: 737px) {
+  .container-copy {
+    text-align: left;
+    max-width: 300px;
+  }
+}
+@media only screen and (min-width: 1254px) {
+  .container-copy {
+    max-width: 450px;
+    margin-top: 142px;
+    margin-left: 90px;
+  }
+}
+
+.container-intro h1 {
+  font-family: "Larsseit", sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3A5F83;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 1254px) {
+  .container-intro h1 {
+    font-family: "Larsseit", sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 40px;
+  }
+}
+.container-intro p {
+  color: #27333CB3;
+}
+
+.container-values {
+  border-bottom: 1px solid #C5D6E6;
+  max-width: 284px;
+  margin: 0 auto -6px;
+}
+@media only screen and (min-width: 737px) {
+  .container-values {
+    margin: 0 0 -6px;
+  }
+}
+@media only screen and (min-width: 1254px) {
+  .container-values {
+    max-width: 400px;
+    margin: 0 0 -26px;
+  }
+}
+.container-values:last-child {
+  border-bottom: none;
+}
+.container-values h2 {
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #5F83A5;
+  margin-top: 38px;
+}
+@media only screen and (min-width: 1254px) {
+  .container-values h2 {
+    margin-top: 44px;
+  }
+}
+.container-values p {
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 1254px) {
+  .container-values p {
+    margin-top: -8px;
+    margin-bottom: 20px;
+  }
+}
+
 .section-image {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100%;
   flex-grow: 1;
   background: linear-gradient(180deg, #FFFFFF 173px, #C5D6E6 173px);
 }
@@ -446,7 +447,7 @@ a:hover {
   }
 }
 
-.section-background {
+.container-background {
   background-image: url("../assets/images/Cat.png");
   background-repeat: no-repeat;
   height: 240px;
@@ -456,12 +457,12 @@ a:hover {
   margin-bottom: 45px;
 }
 @media only screen and (min-width: 737px) {
-  .section-background {
+  .container-background {
     margin-top: 135px;
   }
 }
 @media only screen and (min-width: 1254px) {
-  .section-background {
+  .container-background {
     height: 410px;
     width: 453px;
     background-size: 100% 410px;
