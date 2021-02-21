@@ -16,3 +16,13 @@ The goal of this assignment is for our team to assess your attention to detail, 
 		- [Larsseit Bold](https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+Larsseit+Bold.otf)
 	- When finished, please submit the code as a zip file via Greenhouse (Bonus if you can host it and share the URL with us). We appreciate your hard work on this assignment; feel free to add it to your growing portfolio.
 	- Treat yourself to a nice walk around the block and have a lovely rest of the day! 🙂
+
+## Dev Notes
+- Completed with mobile-first approach
+- Mimicked dropdown option hover state from [Lob digital style guide](https://www.lob.com/style-guide)
+
+### Additional Features
+- Scroll page smoothly back up when dropdown is collapsed
+	- Added smooth scrolling polyfill for Safari support
+- Adaptive design support for medium viewport widths between Figma designs for iPhone8 and Macbook
+- Include metadata for favicon
