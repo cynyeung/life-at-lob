@@ -1,6 +1,6 @@
-# Marketing Developer Take Home Assignment Overview
+# Marketing Developer Assignment Overview
 ## The Goal
-The goal of this take-home assignment is for our team to assess your attention to detail, as well as your front-end chops.
+The goal of this assignment is for our team to assess your attention to detail, as well as your front-end chops.
 
 
 ## Project Details
