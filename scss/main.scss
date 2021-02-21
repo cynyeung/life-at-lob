@@ -14,7 +14,7 @@ main {
 	align-items: center;
 	min-height: 1650px;
 
-	@include viewport(large) {
+	@include viewport(medium) {
 		flex-direction: row-reverse;
 		align-items: unset;
 		min-height: 1300px;
@@ -25,7 +25,7 @@ section {
 	width: 100%;
 	flex-basis: 50%;
 	
-	@include viewport(large) {
+	@include viewport(medium) {
 		flex-grow: 1;
 		width: initial;
 	}
@@ -35,9 +35,13 @@ section {
 	text-align: center;
 	max-width: 330px;
 	margin: 50px auto 0;
+
+	@include viewport(medium) {
+		text-align: left;
+		max-width: 300px;
+	}
 	
 	@include viewport(large) {
-		text-align: left;
 		max-width: 450px;
 		margin-top: 142px;
 		margin-left: 90px;
@@ -65,6 +69,10 @@ section {
 	border-bottom: 1px solid $dove;
 	max-width: 284px;
 	margin: 0 auto -6px;
+
+	@include viewport(medium) {
+		margin: 0 0 -6px;
+	}
 
 	@include viewport(large) {
 		max-width: 400px;
@@ -123,6 +131,10 @@ a {
 	flex-grow: 1;
 	background: linear-gradient(180deg, $white 173px, $dove 173px);
 
+	@include viewport(medium) {
+		background: linear-gradient(180deg, $fog 291px, $dove 291px);
+	}
+
 	@include viewport(large) {
 		background: linear-gradient(180deg, $fog 491px, $dove 491px);
 	}
@@ -137,6 +149,10 @@ a {
 
 	margin-top: 25px;
 	margin-bottom: 45px;
+
+	@include viewport(medium) {
+		margin-top: 135px;
+	}
 
   @include viewport(large) {
     height: 410px;

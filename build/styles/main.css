@@ -291,7 +291,7 @@ main {
   align-items: center;
   min-height: 1650px;
 }
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 737px) {
   main {
     flex-direction: row-reverse;
     align-items: unset;
@@ -303,7 +303,7 @@ section {
   width: 100%;
   flex-basis: 50%;
 }
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 737px) {
   section {
     flex-grow: 1;
     width: initial;
@@ -315,9 +315,14 @@ section {
   max-width: 330px;
   margin: 50px auto 0;
 }
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 737px) {
   .container-copy {
     text-align: left;
+    max-width: 300px;
+  }
+}
+@media only screen and (min-width: 1254px) {
+  .container-copy {
     max-width: 450px;
     margin-top: 142px;
     margin-left: 90px;
@@ -353,6 +358,11 @@ section {
   border-bottom: 1px solid #C5D6E6;
   max-width: 284px;
   margin: 0 auto -6px;
+}
+@media only screen and (min-width: 737px) {
+  .section-values {
+    margin: 0 0 -6px;
+  }
 }
 @media only screen and (min-width: 1254px) {
   .section-values {
@@ -425,6 +435,11 @@ a:hover {
   flex-grow: 1;
   background: linear-gradient(180deg, #FFFFFF 173px, #C5D6E6 173px);
 }
+@media only screen and (min-width: 737px) {
+  .section-image {
+    background: linear-gradient(180deg, #EBF0F6 291px, #C5D6E6 291px);
+  }
+}
 @media only screen and (min-width: 1254px) {
   .section-image {
     background: linear-gradient(180deg, #EBF0F6 491px, #C5D6E6 491px);
@@ -439,6 +454,11 @@ a:hover {
   background-size: 100% 240px;
   margin-top: 25px;
   margin-bottom: 45px;
+}
+@media only screen and (min-width: 737px) {
+  .section-background {
+    margin-top: 135px;
+  }
 }
 @media only screen and (min-width: 1254px) {
   .section-background {

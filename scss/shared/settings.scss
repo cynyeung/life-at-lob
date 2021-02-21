@@ -25,8 +25,8 @@ $azure: #3A5F83;
 // Media Queries
 $breakpoints: (
   small : 320px,
-  medium: 768px,
-  large : 1024px
+  medium: 737px,
+  large : 1254px
 );
 
 @mixin viewport($size) {
@@ -54,7 +54,7 @@ $icons: (
   height: 28px;
   background-size: 100% 28px;
 
-  @include viewport(medium) {
+  @include viewport(large) {
     height: 35px;
     background-size: 100% 35px;
   }
