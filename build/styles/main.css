@@ -57,6 +57,9 @@
   height: 56px;
   margin: 0 auto;
 }
+.dropdown-button:focus {
+  outline: none;
+}
 @media only screen and (min-width: 1254px) {
   .dropdown-button {
     padding-left: 23px;
@@ -82,7 +85,7 @@
   margin: 0;
   width: 310px;
   padding: 14px 0 16px;
-  border-radius: 2px;
+  border-radius: 0 0 2px 2px;
   background-color: #F7F9FA;
 }
 @media only screen and (min-width: 1254px) {

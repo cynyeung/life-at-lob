@@ -33,6 +33,10 @@
 		height: 56px;
 		margin: 0 auto;
 
+		&:focus {
+			outline: none;
+		}
+
 		@include viewport(large) {
 			padding-left: 23px;
 			width: 400px;
@@ -54,7 +58,7 @@
 		margin: 0;
 		width: 310px;
 		padding: 14px 0 16px;
-		border-radius: 2px;
+		border-radius: 0 0 2px 2px;
 		background-color: $mist;
 
 		@include viewport(large) {
