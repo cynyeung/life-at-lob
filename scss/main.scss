@@ -142,10 +142,10 @@ a {
 
 .section-background {
 	background-image: url('../assets/images/Cat.png');
-  background-repeat: no-repeat;
-  height: 240px;
+	background-repeat: no-repeat;
+	height: 240px;
 	width: 265px;
-  background-size: 100% 240px;
+	background-size: 100% 240px;
 
 	margin-top: 25px;
 	margin-bottom: 45px;
@@ -154,11 +154,11 @@ a {
 		margin-top: 135px;
 	}
 
-  @include viewport(large) {
-    height: 410px;
+	@include viewport(large) {
+		height: 410px;
 		width: 453px;
-    background-size: 100% 410px;
+		background-size: 100% 410px;
 		margin-top: 220px;
 		margin-bottom: 52px;
-  }
+	}
 }

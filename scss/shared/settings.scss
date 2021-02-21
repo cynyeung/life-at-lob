@@ -1,6 +1,6 @@
 /** =====================================
-    VARIABLES
-    ================================== */
+	VARIABLES
+	================================== */
 
 
 // Primary Colors
@@ -24,38 +24,38 @@ $azure: #3A5F83;
 
 // Media Queries
 $breakpoints: (
-  small : 320px,
-  medium: 737px,
-  large : 1254px
+	small : 320px,
+	medium: 737px,
+	large : 1254px
 );
 
 @mixin viewport($size) {
-  @media only screen and (min-width: map-get($breakpoints, $size)) {
-    @content;
-  }
+	@media only screen and (min-width: map-get($breakpoints, $size)) {
+		@content;
+	}
 }
 
 // Dropdown Icons
 $assets-path: '../assets/images/';
 $icons: (
-  strength: "icon_01strength.svg",
-  diversity: "icon_02diversity.svg",
-  hammer: "icon_03hammer.png",
-  heart: "icon_04heart.png",
-  scientist: "icon_05scientist.svg",
-  blueprint: "icon_06blueprint.svg",
-  investor: "icon_07investor.svg",
-  chevron: "chevron-right.svg"
+	strength: "icon_01strength.svg",
+	diversity: "icon_02diversity.svg",
+	hammer: "icon_03hammer.png",
+	heart: "icon_04heart.png",
+	scientist: "icon_05scientist.svg",
+	blueprint: "icon_06blueprint.svg",
+	investor: "icon_07investor.svg",
+	chevron: "chevron-right.svg"
 );
 
 @mixin icon($path) {
-  background-image: url($assets-path + map-get($icons, $path));
-  background-repeat: no-repeat;
-  height: 28px;
-  background-size: 100% 28px;
+	background-image: url($assets-path + map-get($icons, $path));
+	background-repeat: no-repeat;
+	height: 28px;
+	background-size: 100% 28px;
 
-  @include viewport(large) {
-    height: 35px;
-    background-size: 100% 35px;
-  }
+	@include viewport(large) {
+		height: 35px;
+		background-size: 100% 35px;
+	}
 }

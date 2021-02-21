@@ -23,17 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		dropdownOptions.scrollIntoView({behavior: "smooth", block: "start"});
 	}
 
-  function collapseDropdown() {
-    dropdownButton.classList.remove('dropdown-options--expanded');
-    dropdownButton.setAttribute('aria-expanded', 'false');
+	function collapseDropdown() {
+		dropdownButton.classList.remove('dropdown-options--expanded');
+		dropdownButton.setAttribute('aria-expanded', 'false');
 
 		// Bespoke feature to scroll up when dropdown closes
 		const sectionTop = document.querySelector('.section-image');
 		sectionTop.scrollIntoView({behavior: "smooth", block: "start"});
-  }
+	}
 
 	dropdownButton.addEventListener('click', clickDropdown);
 	dropdownButton.addEventListener('mouseover', expandDropdown);
 	dropdownSelect.addEventListener('mouseleave', collapseDropdown);
 });
-
