@@ -289,7 +289,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 1600px;
+  min-height: 1650px;
 }
 @media only screen and (min-width: 1254px) {
   main {
@@ -313,13 +313,13 @@ section {
 .container-copy {
   text-align: center;
   max-width: 330px;
-  margin: 48px auto 0;
+  margin: 50px auto 0;
 }
 @media only screen and (min-width: 1254px) {
   .container-copy {
     text-align: left;
     max-width: 450px;
-    margin-top: 141px;
+    margin-top: 142px;
     margin-left: 90px;
   }
 }
@@ -332,6 +332,7 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #3A5F83;
+  margin-bottom: 24px;
 }
 @media only screen and (min-width: 1254px) {
   .section-intro h1 {
@@ -341,6 +342,7 @@ section {
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 40px;
   }
 }
 .section-intro p {
@@ -350,12 +352,12 @@ section {
 .section-values {
   border-bottom: 1px solid #C5D6E6;
   max-width: 284px;
-  margin: 0 auto;
+  margin: 0 auto -6px;
 }
 @media only screen and (min-width: 1254px) {
   .section-values {
     max-width: 400px;
-    margin: unset;
+    margin: 0 0 -26px;
   }
 }
 .section-values:last-child {
@@ -369,6 +371,22 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #5F83A5;
+  margin-top: 38px;
+}
+@media only screen and (min-width: 1254px) {
+  .section-values h2 {
+    margin-top: 44px;
+  }
+}
+.section-values p {
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 1254px) {
+  .section-values p {
+    margin-top: -8px;
+    margin-bottom: 20px;
+  }
 }
 
 p {

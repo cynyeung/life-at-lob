@@ -3,17 +3,18 @@
 @import 'shared/utilities.scss';
 @import 'components/dropdown.scss';
 
-body {
+html, body {
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 1600px;
+	min-height: 1650px;
 
-	@include viewport(medium) {
+	@include viewport(large) {
 		flex-direction: row-reverse;
 		align-items: unset;
 		min-height: 1300px;
@@ -24,7 +25,7 @@ section {
 	width: 100%;
 	flex-basis: 50%;
 	
-	@include viewport(medium) {
+	@include viewport(large) {
 		flex-grow: 1;
 		width: initial;
 	}
@@ -33,12 +34,12 @@ section {
 .container-copy {
 	text-align: center;
 	max-width: 330px;
-	margin: 48px auto 0;
+	margin: 50px auto 0;
 	
-	@include viewport(medium) {
+	@include viewport(large) {
 		text-align: left;
 		max-width: 450px;
-		margin-top: 141px;
+		margin-top: 142px;
 		margin-left: 90px;
 	}
 }
@@ -47,9 +48,11 @@ section {
 	h1 {
 		@include typography(35, 35, 300);
 		color: $azure;
+		margin-bottom: 24px;
 		
-		@include viewport(medium) {
+		@include viewport(large) {
 			@include typography(42, 42, 300);
+			margin-bottom: 40px;
 		}
 	}
 
@@ -61,11 +64,11 @@ section {
 .section-values {
 	border-bottom: 1px solid $dove;
 	max-width: 284px;
-	margin: 0 auto;
+	margin: 0 auto -6px;
 
-	@include viewport(medium) {
+	@include viewport(large) {
 		max-width: 400px;
-		margin: unset;
+		margin: 0 0 -26px;
 	}
 
 	&:last-child {
@@ -75,6 +78,21 @@ section {
 	h2 {
 		@include typography(18, 27, 500);
 		color: $steel;
+		margin-top: 38px;
+
+		@include viewport(large) {
+			margin-top: 44px;
+		}
+	}
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 32px;
+	
+		@include viewport(large) {
+			margin-top: -8px;
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -82,7 +100,7 @@ p {
 	@include typography(18, 25, 400);
 	color: $shadow;
 
-	@include viewport(medium) {
+	@include viewport(large) {
 		@include typography(18, 27, 400);
 	}
 }
@@ -105,7 +123,7 @@ a {
 	flex-grow: 1;
 	background: linear-gradient(180deg, $white 173px, $dove 173px);
 
-	@include viewport(medium) {
+	@include viewport(large) {
 		background: linear-gradient(180deg, $fog 491px, $dove 491px);
 	}
 }
@@ -120,7 +138,7 @@ a {
 	margin-top: 25px;
 	margin-bottom: 45px;
 
-  @include viewport(medium) {
+  @include viewport(large) {
     height: 410px;
 		width: 453px;
     background-size: 100% 410px;
