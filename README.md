@@ -20,6 +20,7 @@ The goal of this assignment is for our team to assess your attention to detail, 
 ## Dev Notes
 - Completed with mobile-first approach
 - Mimicked dropdown option hover state from [Lob digital style guide](https://www.lob.com/style-guide)
+- Bugfix: On iOS, double-tap is expected behavior to trigger click event. There's no true JS method to detect for device type. Instead, I found and updated to an alternative solution to detect for platform. Now hover events trigger only for non-iOS platforms to avoid double-tapping to expand dropdown.
 
 ### Additional Features
 - Scroll page smoothly back up when dropdown is collapsed
